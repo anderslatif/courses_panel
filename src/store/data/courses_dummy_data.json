@@ -1,0 +1,38 @@
+[
+  {
+    "price": {
+      "regular": 0.00,
+      "currency": "USD"
+    },
+    "slug": "slug_name_for_aws",
+    "instructors": [
+      {
+        "id": 1,
+        "name": "Instructor Name",
+        "bio": "This is a short description about the instructor",
+        "avatar": {
+          "mediaType": "image/jpeg",
+          "url": "http://www.gstatic.com/webp/gallery/1.jpg"
+        }
+      }
+    ],
+    "poster": {
+      "mediaType": "image/jpeg",
+      "url": "http://www.gstatic.com/webp/gallery/1.jpg"
+    },
+    "id": 1,
+    "meta": {
+      "duration": 1200,
+      "difficulty": "Beginner",
+      "students": 20,
+      "language": "en",
+      "rating": 3.0
+    },
+    "categories": [
+      "trading",
+      "technical-analysis",
+      "cryptocurrencies"
+    ],
+    "title": "Course Title"
+  }
+]

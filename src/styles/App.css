@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 80px;
+  padding: 10px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.star-quarter:after {
+  content:'';
+  position:absolute;
+  background:white;
+  width: 65%;
+  height: 100%;
+  left: 35%;
+}
+
+.star-half:after {
+  content:'';
+  position:absolute;
+  background:white;
+  width: 45%;
+  height: 100%;
+  left: 50%;
+}
+
+.star-three-quarters:after {
+  content:'';
+  position:absolute;
+  background:white;
+  width: 35%;
+  height: 100%;
+  left: 55%;
+}
+
+.filtering {
+  padding-bottom: 20px;
+}
+
+.difficulty-dropdown {
+  width: 400px;
+}
