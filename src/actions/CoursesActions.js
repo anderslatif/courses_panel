@@ -1,4 +1,13 @@
-import {FILTER_DIFFICULTY} from "../constants/constants.js";
+import {FILTER_DIFFICULTY, FILTER_TITLE} from "../constants/constants.js";
+
+
+export function filterTitle(searchText) {
+
+    return {
+        type: FILTER_TITLE,
+        payload: {searchText: searchText}
+    }
+}
 
 export function filterDifficulty(selectedDifficultyList) {
 

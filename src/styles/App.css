@@ -49,10 +49,33 @@
   left: 55%;
 }
 
-.filtering {
-  padding-bottom: 20px;
+/*
+.input-field {
 }
 
-.difficulty-dropdown {
+.select-field {
+}
+*/
+
+
+.filtering {
+  padding-bottom: 60px;
+}
+
+.input-field {
+  display: inline-block;
+  float:left;
+  width: 300px;
+  margin-right: 40px;
+}
+
+.input-field input {
+  width: 300px;
+  height: 35px;
+}
+.select-field {
+  display: inline-block;
+  float:left;
   width: 400px;
+  z-index: 1;
 }

@@ -18,7 +18,8 @@ class Courses extends Component {
         super(props);
         this.state = {
             availableCourseDifficulty: [],
-            selectedDifficulty: []
+            selectedDifficulty: [],
+            courseTitleSearchText: ""
         }
     }
 
@@ -30,6 +31,12 @@ class Courses extends Component {
         this.setState({availableCourseDifficulty});
     }
 
+    onSearchTextChanged = (event) => {
+        event.preventDefault();
+        this.setState({courseTitleSearchText: event.target.value});
+        this.props.actions.coursesActions.filterTitle(event.target.value);
+    };
+
     handleDifficultySelection = (selectedOption) => {
         // the parameter selected option is an array that accurately represents what has been selected or deselected
         this.setState({selectedDifficulty: selectedOption});
@@ -38,13 +45,18 @@ class Courses extends Component {
     };
 
     render() {
-        console.log(this.props.courses.coursesFiltered.toArray().length);
+
         return (
             <main className="container">
                 <div >
                     <p style={{padding: "20px 0 20px 0"}}>Here is a list of available courses.</p>
                     <div className="filtering">
-                        <div className="difficulty-dropdown">
+                        <div className="input-field">
+                            <input className="Select-input Select-multi" style={{borderRadius: "4px"}} placeholder="Search on course titles"
+                                   value={this.state.courseTitleSearchText} onChange={e => this.onSearchTextChanged(e)}/>
+
+                        </div>
+                        <div className="select-field">
                             <Select
                                 name="form-field-name"
                                 placeholder="Narrow down the difficulty level"

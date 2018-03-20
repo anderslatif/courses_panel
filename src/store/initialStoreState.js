@@ -15,7 +15,10 @@ const initialStoreState = {
         coursesAll: new Immutable.List(courses),
         coursesFiltered: new Immutable.List(coursesListProd),
         coursesDifficultyAll: new Immutable.List(["Beginner", "Intermediate", "Expert"]),
-        coursesDifficultySelected: new Immutable.List([])
+        filtering: {
+            searchText: "",
+            difficultySelected: new Immutable.List([])
+        }
     }
 };
 
